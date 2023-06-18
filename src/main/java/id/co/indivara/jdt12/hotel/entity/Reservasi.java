@@ -8,16 +8,15 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "room_availabities")
+@Table(name = "Reserves")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class RoomAvailability {
+public class Reservasi {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
-    private int idRoom;//fk
-    private int jumlahRoomAvail;
-    private int jumlahRoomTaken;
+    private int idBooking;//fk
+    private String tglCheckIn;
+    private String tglCheckOut;
 }
