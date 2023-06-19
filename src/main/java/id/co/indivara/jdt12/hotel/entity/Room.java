@@ -16,8 +16,8 @@ import javax.persistence.*;
 public class Room {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
-    @Column(name = "nama_rooms")
-    private int noRoom;
-    private String typeRoom;
+    private Integer roomId;
+    @Column(name = "name_rooms")
+    private int roomNo;
+    private String roomType;
 }

@@ -16,7 +16,8 @@ import javax.persistence.*;
 public class CheckIn {
     @Id
     @GeneratedValue (strategy = GenerationType.AUTO)
-    private int idReservasi;//fk
-    private boolean roomCheckIn;
-    private String tglCheckIn;
+    private Integer checkinId;
+    private int reservasiId;//fk
+    private boolean checkinRoom;
+    private String tglCheckin;
 }

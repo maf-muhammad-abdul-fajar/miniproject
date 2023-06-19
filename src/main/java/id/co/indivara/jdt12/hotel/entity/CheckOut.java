@@ -16,7 +16,8 @@ import javax.persistence.*;
 public class CheckOut {
     @Id
     @GeneratedValue (strategy = GenerationType.AUTO)
-    private int idReservasi;//fk
-    private boolean roomCheckOut;
-    private String tglCheckOut;
+    private Integer checkoutId;
+    private int reservasiId;//fk
+    private boolean checkoutRoom;
+    private String tglCheckout;
 }

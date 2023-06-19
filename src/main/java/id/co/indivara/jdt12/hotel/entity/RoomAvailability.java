@@ -16,8 +16,8 @@ import javax.persistence.*;
 public class RoomAvailability {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
-    private int idRoom;//fk
+    private Integer roomAvailId;
+    private int roomId;//fk
     private int jumlahRoomAvail;
     private int jumlahRoomTaken;
 }

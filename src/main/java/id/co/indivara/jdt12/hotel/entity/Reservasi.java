@@ -16,6 +16,7 @@ import javax.persistence.*;
 public class Reservasi {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    private Integer reservasiId;
     private int idBooking;//fk
     private String tglCheckIn;
     private String tglCheckOut;
