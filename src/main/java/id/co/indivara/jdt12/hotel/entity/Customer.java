@@ -17,11 +17,18 @@ import javax.persistence.*;
 @Builder
 public class Customer {
     @Id
+    @Column(name = "customer_id")//Membuat kolom dengan nama customer id pada database
     @GeneratedValue(strategy = GenerationType.AUTO)//perintah agar id auto increment
     private Integer customerId;
-    @Column(name = "name_customers")
+
+    @Column(name = "customer_name")
     private String name;
-    private int noHp;
+    @Column(name = "noHp_customer")
+    private String noHp;
+    @Column(name = "customer_email")
     private String email;
-    private int nik;
+    @Column(name = "customer_nik")
+    private String nik;
+    @Column(name = "address")
+    private String address;
 }

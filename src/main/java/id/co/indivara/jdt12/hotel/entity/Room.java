@@ -15,9 +15,17 @@ import javax.persistence.*;
 @Builder
 public class Room {
     @Id
+    @Column(name = "room_id")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer roomId;
-    @Column(name = "name_rooms")
-    private int roomNo;
+
+    @Column(name = "room_number")
+    private Integer roomNumber;
+    @Column(name = "room_type")
     private String roomType;
+    @Column(name = "price")
+    private Integer price;
+    @Column(name = "description")
+    private String description;
+
 }
