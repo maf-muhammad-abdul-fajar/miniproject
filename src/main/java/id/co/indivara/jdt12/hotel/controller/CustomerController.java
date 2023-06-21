@@ -30,5 +30,6 @@ public class CustomerController {
     public String deleteCustomer(@PathVariable Integer customerId){
         customerService.deleteCustomer(customerId);
         return "Data berhasil dihapus!!" ;
+
     }
 }
