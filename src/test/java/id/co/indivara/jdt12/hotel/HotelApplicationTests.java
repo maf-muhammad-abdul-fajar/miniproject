@@ -10,4 +10,5 @@ class HotelApplicationTests {
 	void contextLoads() {
 	}
 
+
 }

@@ -18,7 +18,7 @@ public class CustomerController {
         return customerService.createCustomer(customer);
     }
     @PutMapping("/customers/{customerId}")
-    public String updateCustomer(@RequestBody Customer customer, Integer customerId){
+    public String updateCustomer(@RequestBody Customer customer, @PathVariable Integer customerId){
         return customerService.updateCustomer(customer, customerId);
     }
     //GET dan DELETE hanya dapat diakses admin

@@ -33,7 +33,7 @@ public class CustomerService {
         if (Objects.nonNull(customer.getEmail()) && !"".equalsIgnoreCase(customer.getEmail())){
             cust.setEmail(customer.getEmail());
         }
-        return "Gagal update";
+        return "Berhasil update";
     }
     //DELETE /customer/{id}
     public void deleteCustomer(Integer customerId){
